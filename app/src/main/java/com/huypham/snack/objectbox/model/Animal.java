@@ -1,9 +1,11 @@
 package com.huypham.snack.objectbox.model;
 
+import java.util.Date;
 import java.util.UUID;
 
 import io.objectbox.annotation.Entity;
 import io.objectbox.annotation.Id;
+import io.objectbox.annotation.Uid;
 
 /**
  * Snack project_object box
@@ -14,16 +16,20 @@ import io.objectbox.annotation.Id;
 public class Animal {
     @Id
     private long id;
+
     private String name;
     private String description;
+    @Uid(589581725468201101L)
+    private Date date;
 
     public Animal() {
     }
 
-    public Animal(String name, String description) {
+    public Animal(String name, String description, Date date) {
         this.id = Long.parseLong(UUID.randomUUID().toString());
         this.name = name;
         this.description = description;
+        this.date = date;
     }
 
     public String getDescription() {
@@ -48,5 +54,13 @@ public class Animal {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 }

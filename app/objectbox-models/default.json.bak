@@ -5,7 +5,7 @@
   "entities": [
     {
       "id": "1:122784890435375797",
-      "lastPropertyId": "2:4706056704368627278",
+      "lastPropertyId": "5:7815191893807869869",
       "name": "Animal",
       "properties": [
         {
@@ -15,6 +15,14 @@
         {
           "id": "2:4706056704368627278",
           "name": "name"
+        },
+        {
+          "id": "3:8333061310373884570",
+          "name": "description"
+        },
+        {
+          "id": "5:7815191893807869869",
+          "name": "date"
         }
       ],
       "relations": []
@@ -26,9 +34,14 @@
   "lastSequenceId": "0:0",
   "modelVersion": 4,
   "modelVersionParserMinimum": 4,
+  "newUidPool": [
+    589581725468201101
+  ],
   "retiredEntityUids": [],
   "retiredIndexUids": [],
-  "retiredPropertyUids": [],
+  "retiredPropertyUids": [
+    4008346654728847540
+  ],
   "retiredRelationUids": [],
   "version": 1
 }

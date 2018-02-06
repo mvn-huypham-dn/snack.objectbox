@@ -48,15 +48,17 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalView
      * Animal view holder
      */
     class AnimalViewHolder extends RecyclerView.ViewHolder {
-        private TextView tvName;
-        private TextView tvDescription;
-        private TextView tvOrderNumber;
+        private TextView mTvName;
+        private TextView mTvDescription;
+        private TextView mTvOrderNumber;
+        private TextView mTvDate;
 
         AnimalViewHolder(View itemView) {
             super(itemView);
-            tvName = itemView.findViewById(R.id.tvName);
-            tvDescription = itemView.findViewById(R.id.tvDescription);
-            tvOrderNumber = itemView.findViewById(R.id.tvOrderNumber);
+            mTvName = itemView.findViewById(R.id.tvName);
+            mTvDescription = itemView.findViewById(R.id.tvDescription);
+            mTvOrderNumber = itemView.findViewById(R.id.tvOrderNumber);
+            mTvDate = itemView.findViewById(R.id.tvDate);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -75,9 +77,12 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalView
 
         private void setDataForAnimal(int position) {
             Animal animal = mAnimals.get(position);
-            tvOrderNumber.setText(mContext.getString(R.string.text_order_number, animal.getId()));
-            tvDescription.setText(animal.getDescription());
-            tvName.setText(animal.getName());
+            mTvOrderNumber.setText(mContext.getString(R.string.text_order_number, animal.getId()));
+            mTvDescription.setText(animal.getDescription());
+            mTvName.setText(animal.getName());
+            mTvDate.setText(String.valueOf(animal.getDate()));
+//            mTvDate.setText(animal.getDate());
+
         }
     }
 

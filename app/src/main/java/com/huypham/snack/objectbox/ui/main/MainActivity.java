@@ -8,7 +8,6 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
@@ -18,7 +17,9 @@ import android.widget.TextView;
 import com.huypham.snack.objectbox.R;
 import com.huypham.snack.objectbox.model.Animal;
 import com.huypham.snack.objectbox.pref.App;
+import com.huypham.snack.objectbox.pref.FormatDate;
 
+import java.util.Date;
 import java.util.List;
 
 import io.objectbox.Box;
@@ -58,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements AnimalAdapter.OnI
         BoxStore boxStore = App.getApp().getBoxStore();
         mAnimalBox = boxStore.boxFor(Animal.class);
 //        mAnimalQuery = mAnimalBox.query().order(Animal_.name).build();
+//        mAnimalQuery = mAnimalBox.query().equal(Animal_.name, "a").build();
     }
 
     private void initView() {
@@ -82,16 +84,13 @@ public class MainActivity extends AppCompatActivity implements AnimalAdapter.OnI
             mTvInform.setVisibility(View.GONE);
             mRecyclerViewAnimal.setVisibility(View.VISIBLE);
             mRecyclerViewAnimal.setAdapter(mAnimalAdapter);
+            mRecyclerViewAnimal.smoothScrollToPosition(mAnimals.size());
             mAnimalAdapter.notifyDataSetChanged();
         }
     }
 
-//    private void setDataListAnimal() {
-////        mAnimals = mAnimalQuery.find();
-//        mAnimals = mAnimalBox.getAll();
-//    }
-
     private void getAllAnimal() {
+//        mAnimals = mAnimalQuery.find();
         mAnimals = mAnimalBox.getAll();
     }
 
@@ -113,14 +112,15 @@ public class MainActivity extends AppCompatActivity implements AnimalAdapter.OnI
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 String name = edtName.getText().toString().trim();
                                 String description = edtDes.getText().toString().trim();
+                                FormatDate date = new FormatDate();
+
                                 Animal animal = new Animal();
                                 animal.setName(name);
                                 animal.setDescription(description);
-                                Log.d(TAG, "onClick: 1");
+                                // migration
+                                animal.setDate(new Date());
                                 mAnimalBox.put(animal);
-                                Log.d(TAG, "onClick: 2");
                                 initRecyclerViewAnimal();
-                                Log.d(TAG, "onClick: 4");
                             }
                         })
                         .setNegativeButton("Cancel", null)
@@ -192,8 +192,12 @@ public class MainActivity extends AppCompatActivity implements AnimalAdapter.OnI
                     public void onClick(DialogInterface dialogInterface, int i) {
                         String name = edtName.getText().toString().trim();
                         String description = edtDes.getText().toString().trim();
+                        FormatDate date = new FormatDate();
+
                         animal.setName(name);
                         animal.setDescription(description);
+                        // migration
+                        animal.setDate(new Date());
                         mAnimalBox.put(animal);
                         initRecyclerViewAnimal();
                     }
