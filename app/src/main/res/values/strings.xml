@@ -4,10 +4,17 @@
     <!--Main screen-->
     <string name="button_delete_all">Delete All</string>
     <string name="button_add">Add</string>
-    
+    <string name="button_delete">Delete</string>
+    <string name="button_update">Update</string>
+    <string name="text_list_empty">Press Add button to add new property</string>
+
     <!--Item recycler view-->
     <string name="text_title">Hello</string>
     <string name="text_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
     <string name="text_date">Thus 17-03-2018</string>
     <string name="text_order_number">#%d"</string>
+
+    <!--Dialog animal-->
+    <string name="edit_text_name">Animal name</string>
+    <string name="edit_text_description">Some description about that animal</string>
 </resources>

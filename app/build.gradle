@@ -31,5 +31,10 @@ dependencies {
 
     // Config object box
     compile "io.objectbox:objectbox-android:$objectboxVersion"
+    // some useful Kotlin extension functions
+    // compile "io.objectbox:objectbox-kotlin:$objectboxVersion"
+
     annotationProcessor "io.objectbox:objectbox-processor:$objectboxVersion"
+    // When using Kotlin use kapt instead:
+    // kapt "io.objectbox:objectbox-processor:$objectboxVersion"
 }
