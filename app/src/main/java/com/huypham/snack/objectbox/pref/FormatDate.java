@@ -4,7 +4,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Created by huyphamna on 07/02/2018.
+ * Snack project_object box
+ * Created by HuyPhamNA on 07/02/2018.
  */
 
 public class FormatDate {

@@ -80,8 +80,8 @@ public class AnimalAdapter extends RecyclerView.Adapter<AnimalAdapter.AnimalView
             mTvOrderNumber.setText(mContext.getString(R.string.text_order_number, animal.getId()));
             mTvDescription.setText(animal.getDescription());
             mTvName.setText(animal.getName());
-            mTvDate.setText(String.valueOf(animal.getDate()));
-//            mTvDate.setText(animal.getDate());
+//            mTvDate.setText(String.valueOf(animal.getDate()));
+            mTvDate.setText(animal.getDate());
 
         }
     }

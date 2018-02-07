@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">objectbox</string>
+    <string name="app_name">ObjectBox</string>
 
     <!--Main screen-->
     <string name="button_delete_all">Delete All</string>

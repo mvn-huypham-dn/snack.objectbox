@@ -19,13 +19,13 @@ public class Animal {
 
     private String name;
     private String description;
-    @Uid(589581725468201101L)
-    private Date date;
+    @Uid(8362872018430735390L)
+    private String date;
 
     public Animal() {
     }
 
-    public Animal(String name, String description, Date date) {
+    public Animal(String name, String description, String date) {
         this.id = Long.parseLong(UUID.randomUUID().toString());
         this.name = name;
         this.description = description;
@@ -56,11 +56,11 @@ public class Animal {
         this.name = name;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 }

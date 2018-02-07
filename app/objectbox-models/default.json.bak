@@ -5,7 +5,7 @@
   "entities": [
     {
       "id": "1:122784890435375797",
-      "lastPropertyId": "5:7815191893807869869",
+      "lastPropertyId": "6:589581725468201101",
       "name": "Animal",
       "properties": [
         {
@@ -21,26 +21,85 @@
           "name": "description"
         },
         {
-          "id": "5:7815191893807869869",
+          "id": "6:589581725468201101",
           "name": "date"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:5648404917972744534",
+      "lastPropertyId": "2:8878260432327076159",
+      "name": "Order",
+      "properties": [
+        {
+          "id": "1:4442650160430432139",
+          "name": "id"
+        },
+        {
+          "id": "2:8878260432327076159",
+          "indexId": "1:2795726869339471877",
+          "name": "customerId"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:8167711192862722680",
+      "lastPropertyId": "1:3220695244491452023",
+      "name": "Customer",
+      "properties": [
+        {
+          "id": "1:3220695244491452023",
+          "name": "id"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:5299671031320009658",
+      "lastPropertyId": "1:4893256342541982770",
+      "name": "Student",
+      "properties": [
+        {
+          "id": "1:4893256342541982770",
+          "name": "id"
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:3299661593516067166",
+          "name": "teachers"
+        }
+      ]
+    },
+    {
+      "id": "5:8245668259822134236",
+      "lastPropertyId": "1:2244522056048855848",
+      "name": "Teacher",
+      "properties": [
+        {
+          "id": "1:2244522056048855848",
+          "name": "id"
         }
       ],
       "relations": []
     }
   ],
-  "lastEntityId": "1:122784890435375797",
-  "lastIndexId": "0:0",
-  "lastRelationId": "0:0",
+  "lastEntityId": "5:8245668259822134236",
+  "lastIndexId": "1:2795726869339471877",
+  "lastRelationId": "1:3299661593516067166",
   "lastSequenceId": "0:0",
   "modelVersion": 4,
   "modelVersionParserMinimum": 4,
   "newUidPool": [
-    589581725468201101
+    8362872018430735390
   ],
   "retiredEntityUids": [],
   "retiredIndexUids": [],
   "retiredPropertyUids": [
-    4008346654728847540
+    4008346654728847540,
+    7815191893807869869
   ],
   "retiredRelationUids": [],
   "version": 1

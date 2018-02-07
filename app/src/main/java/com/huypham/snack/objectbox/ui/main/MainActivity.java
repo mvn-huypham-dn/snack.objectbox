@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.huypham.snack.objectbox.R;
 import com.huypham.snack.objectbox.model.Animal;
+import com.huypham.snack.objectbox.model.Animal_;
 import com.huypham.snack.objectbox.pref.App;
 import com.huypham.snack.objectbox.pref.FormatDate;
 
@@ -118,7 +119,7 @@ public class MainActivity extends AppCompatActivity implements AnimalAdapter.OnI
                                 animal.setName(name);
                                 animal.setDescription(description);
                                 // migration
-                                animal.setDate(new Date());
+                                animal.setDate(date.formatDate);
                                 mAnimalBox.put(animal);
                                 initRecyclerViewAnimal();
                             }
@@ -197,7 +198,7 @@ public class MainActivity extends AppCompatActivity implements AnimalAdapter.OnI
                         animal.setName(name);
                         animal.setDescription(description);
                         // migration
-                        animal.setDate(new Date());
+                        animal.setDate(date.formatDate);
                         mAnimalBox.put(animal);
                         initRecyclerViewAnimal();
                     }

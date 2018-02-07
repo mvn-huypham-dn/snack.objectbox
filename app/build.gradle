@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 // Config object box
 apply plugin: 'io.objectbox'
+// apply plugin: 'kotlin-android' // if using Kotlin
+// apply plugin: 'kotlin-kapt' // if using Kotlin
 
 android {
     compileSdkVersion 26
