@@ -1,0 +1,104 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:122784890435375797",
+      "lastPropertyId": "7:8362872018430735390",
+      "name": "Animal",
+      "properties": [
+        {
+          "id": "1:6412890221506732366",
+          "name": "id"
+        },
+        {
+          "id": "2:4706056704368627278",
+          "name": "name"
+        },
+        {
+          "id": "3:8333061310373884570",
+          "name": "description"
+        },
+        {
+          "id": "7:8362872018430735390",
+          "name": "date"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:5648404917972744534",
+      "lastPropertyId": "2:8878260432327076159",
+      "name": "Order",
+      "properties": [
+        {
+          "id": "1:4442650160430432139",
+          "name": "id"
+        },
+        {
+          "id": "2:8878260432327076159",
+          "indexId": "1:2795726869339471877",
+          "name": "customerId"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:8167711192862722680",
+      "lastPropertyId": "1:3220695244491452023",
+      "name": "Customer",
+      "properties": [
+        {
+          "id": "1:3220695244491452023",
+          "name": "id"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:5299671031320009658",
+      "lastPropertyId": "1:4893256342541982770",
+      "name": "Student",
+      "properties": [
+        {
+          "id": "1:4893256342541982770",
+          "name": "id"
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:3299661593516067166",
+          "name": "teachers"
+        }
+      ]
+    },
+    {
+      "id": "5:8245668259822134236",
+      "lastPropertyId": "1:2244522056048855848",
+      "name": "Teacher",
+      "properties": [
+        {
+          "id": "1:2244522056048855848",
+          "name": "id"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "5:8245668259822134236",
+  "lastIndexId": "1:2795726869339471877",
+  "lastRelationId": "1:3299661593516067166",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    4008346654728847540,
+    7815191893807869869,
+    589581725468201101
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}

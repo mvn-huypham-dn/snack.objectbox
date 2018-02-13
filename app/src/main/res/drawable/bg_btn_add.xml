@@ -3,25 +3,25 @@
     <item android:state_pressed="true">
         <shape>
             <corners android:radius="5dp" />
-            <solid android:color="@color/color_light_yellow_green" />
+            <solid android:color="@color/color_light_ultra_violet" />
         </shape>
     </item>
     <item android:state_enabled="true">
         <shape>
             <corners android:radius="5dp" />
-            <solid android:color="@color/color_yellow_green" />
+            <solid android:color="@color/color_ultra_violet" />
         </shape>
     </item>
     <item android:state_enabled="false">
         <shape>
             <corners android:radius="5dp" />
-            <solid android:color="@color/color_light_yellow_green" />
+            <solid android:color="@color/color_light_ultra_violet" />
         </shape>
     </item>
     <item>
         <shape>
             <corners android:radius="5dp" />
-            <solid android:color="@color/color_yellow_green" />
+            <solid android:color="@color/color_ultra_violet" />
         </shape>
     </item>
 </selector>

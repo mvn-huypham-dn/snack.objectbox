@@ -4,6 +4,7 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="color_ultra_violet">#5F4B8B</color>
+    <color name="color_light_ultra_violet">#856ac2</color>
     <color name="color_pale_green">#98fb98</color>
     <color name="color_light_pale_green">#d9f5d0</color>
     <color name="color_yellow_green">#9acd32</color>
@@ -11,4 +12,5 @@
     <color name="color_black">#000000</color>
     <color name="color_white">#ffffff</color>
     <color name="color_gray">#a0a0a0</color>
+    <color name="color_light_gray">#d9d9d9</color>
 </resources>
